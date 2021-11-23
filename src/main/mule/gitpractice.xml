@@ -15,4 +15,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="264f5356-68ab-45f4-bc0f-8f3e760f9904" config-ref="HTTP_Listener_config" path="/dhanush"/>
 		<set-payload value="from dhanush branch" doc:name="Set Payload" doc:id="c254e74e-7a3d-4896-9af0-e70bd5e1c733" />
 	</flow>
+	<flow name="prakashFlow" doc:id="a75ae0cf-92f3-49d3-a3dd-ea7e872b6edd" >
+		<http:listener doc:name="Listener" doc:id="2c2f94d9-cc5d-451a-93f2-e34c93ca16eb" config-ref="HTTP_Listener_config" path="/prakash"/>
+		<set-payload value="prakash flow" doc:name="Set Payload" doc:id="519620cc-34b0-495b-af28-7ef40220832f" />
+	</flow>
 </mule>
