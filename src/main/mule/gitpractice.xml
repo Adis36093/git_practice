@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="f2c14133-f921-4b21-b176-cad08db2a176" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="gitpracticeFlow" doc:id="30c1aac3-9c36-4c30-b499-01e1884fb983" >
+		<http:listener doc:name="Listener" doc:id="89c6049a-b71e-4a60-816c-f4f4bf4a354f" path="/aditi" config-ref="HTTP_Listener_config"/>
+		<set-payload doc:name="Set Payload" doc:id="12275316-c956-4d2f-9227-0f536bb56b8d" value="aditi's changes"/>
+	</flow>
+</mule>
